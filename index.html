@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jagadeesh Agriculture</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><nav class="navbar"><a class="logo" href="index.html">🌱 Jagadeesh <span>Agriculture</span></a><div class="nav-links"><a class="active" href="index.html">Home</a><a href="about.html">About</a><a href="crops.html">Crops</a><a href="techniques.html">Techniques</a><a href="fertilizers.html">Store</a><a href="farmer.html">Farmers</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div></nav></header>
+<section class="hero">
+<div class="slide active"><img src="images/hero1.jpg"><div class="hero-content"><div class="small-title">WELCOME TO JAGADEESH AGRICULTURE</div><h1>Growing Today<br><span>For A Better Tomorrow</span></h1><p>Empowering farmers with modern farming knowledge, quality agricultural products and smart solutions.</p><a class="btn" href="crops.html">Explore Agriculture</a></div></div>
+<div class="slide"><img src="images/hero2.jpg"><div class="hero-content"><div class="small-title">SUPPORTING OUR FARMERS</div><h1>Farmers Are The<br><span>Heart Of Agriculture</span></h1><p>Discover useful farming information and resources designed to help farmers grow better crops.</p><a class="btn" href="farmer.html">Farmer Registration</a></div></div>
+<div class="slide"><img src="images/hero3.jpg"><div class="hero-content"><div class="small-title">MODERN FARMING</div><h1>Technology Meets<br><span>Agriculture</span></h1><p>Learn about modern farming techniques, irrigation and agricultural technology.</p><a class="btn" href="techniques.html">Explore Techniques</a></div></div>
+<div class="slide"><img src="images/hero4.jpg"><div class="hero-content"><div class="small-title">HEALTHY CROPS</div><h1>Better Farming<br><span>Better Harvest</span></h1><p>Explore crops, farming practices and agricultural solutions for a productive future.</p><a class="btn" href="crops.html">View Crops</a></div></div>
+<div class="slide"><img src="images/hero5.jpg"><div class="hero-content"><div class="small-title">SMART AGRICULTURE</div><h1>Innovation For<br><span>Modern Farmers</span></h1><p>Discover how smart technology can create sustainable and efficient agriculture.</p><a class="btn" href="about.html">Learn More</a></div></div>
+<button class="prev" onclick="changeSlide(-1)">❮</button><button class="next" onclick="changeSlide(1)">❯</button><div class="dots"><span class="dot active-dot" onclick="currentSlide(0)"></span><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span><span class="dot" onclick="currentSlide(4)"></span></div></section>
+<section class="section"><div class="section-title"><div class="eyebrow">JAGADEESH AGRICULTURE</div><h2>Growing Together, Growing Better</h2><div class="line"></div><p class="muted">A student-project agriculture portal connecting farmers with crop knowledge, modern techniques and agricultural products.</p></div><div class="cards"><div class="card feature"><div class="icon">🌾</div><h3>Quality Crops</h3><p>Learn about crops and cultivation methods.</p></div><div class="card feature"><div class="icon">🚜</div><h3>Modern Farming</h3><p>Discover productive farming techniques.</p></div><div class="card feature"><div class="icon">🧑‍🌾</div><h3>Farmer Support</h3><p>Useful resources designed for farmers.</p></div><div class="card feature"><div class="icon">🌱</div><h3>Sustainable Future</h3><p>Promoting responsible agriculture.</p></div></div></section>
+<section class="banner"><div class="eyebrow">AGRICULTURAL STORE</div><h2>Explore Our Interactive Fertilizer Store</h2><p>Choose products, set quantities and review your demo cart before checkout.</p><a class="btn" href="fertilizers.html">Visit Fertilizer Store →</a></section><section class="stats"><div class="stat"><h3>25+</h3><p>Crop Types</p></div><div class="stat"><h3>50+</h3><p>Farming Tips</p></div><div class="stat"><h3>100+</h3><p>Farmers Supported</p></div><div class="stat"><h3>24/7</h3><p>Online Information</p></div></section>
+<footer><div class="footer-logo">🌱 Jagadeesh Agriculture</div><p>Growing today for a greener and better tomorrow.</p><div class="footer-links"><a href="about.html">About</a><a href="crops.html">Crops</a><a href="fertilizers.html">Store</a><a href="contact.html">Contact</a></div><p class="copyright">© 2026 Jagadeesh Agriculture. Academic Project.</p></footer><script src="js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.slide, .mySlides, .slider .item, .carousel .item');
+  if (slides.length > 1 && !document.querySelector('[data-auto-slide-2s]')) {
+    let i = 0;
+    slides.forEach((s, n) => s.style.display = n === 0 ? '' : 'none');
+    setInterval(() => {
+      slides[i].style.display = 'none';
+      i = (i + 1) % slides.length;
+      slides[i].style.display = '';
+    }, 2000);
+  }
+});
+</script>
+
+</body></html>
